@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# MacOS
+.DS_Store
+
+# Large Files
+*.mp4
+*.mov
+# Keep temp files out of git
+temp_video.*
