@@ -243,7 +243,7 @@ with col1:
                     if frames:
                         cols = st.columns(min(len(frames), 5))
                         for idx, (t, p) in enumerate(frames):
-                             cols[idx % 5].image(p, caption=f"{t}s", use_container_width=True)
+                             cols[idx % 5].image(p, caption=f"{t}s", use_column_width=True)
                     
                     # Step 2: Audio -> Text (Universal - Whisper Local)
                     status.write("🎤 正在进行语音转写 (Whisper Local)...")
@@ -515,7 +515,7 @@ with col1:
                                 if rep_frames:
                                     if len(rep_frames) == 1:
                                         # Single frame
-                                        st.image(rep_frames[0][1], caption=f"📸 违规画面 @ {rep_frames[0][0]}s", use_container_width=True)
+                                        st.image(rep_frames[0][1], caption=f"📸 违规画面 @ {rep_frames[0][0]}s", use_column_width=True)
                                     else:
                                         # Multiple frames in grid
                                         frame_cols = st.columns(min(len(rep_frames), 3))
@@ -523,7 +523,7 @@ with col1:
                                         for i, (t, path) in enumerate(rep_frames):
                                             with frame_cols[i]:
                                                 label = labels[i] if i < len(labels) else f"帧{i+1}"
-                                                st.image(path, caption=f"📸 {label} @ {t}s", use_container_width=True)
+                                                st.image(path, caption=f"📸 {label} @ {t}s", use_column_width=True)
                                 else:
                                     st.caption("⚠️ 未找到对应画面（可能为音频违规或时间戳超出采样范围）")
                                 
