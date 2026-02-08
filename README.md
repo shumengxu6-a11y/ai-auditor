@@ -1,5 +1,7 @@
 # 🛡️ AI 智能视频内容审核助手 (Qwen/DeepSeek Edition)
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-auditor-xsm.streamlit.app)
+
 > **2026 Multimodal Content Moderation System**
 > 
 > 基于阿里云 Qwen-VL 与 DeepSeek-V3 的多模态短视频审核系统，专为高并发、高精度的内容安全场景设计。
