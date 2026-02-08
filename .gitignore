@@ -1,17 +1,37 @@
-# Python
+# System & OS
+.DS_Store
 __pycache__/
 *.py[cod]
 *$py.class
+.vscode/
+.idea/
+
+# Virtual Environments
 venv/
 .venv/
 env/
+
+# Sensitive & Configuration
 .env
+secret.key
+secrets.toml
 
-# MacOS
-.DS_Store
-
-# Large Files
+# Media & Large Files (User specified unwanted files)
 *.mp4
 *.mov
-# Keep temp files out of git
-temp_video.*
+*.avi
+*.mkv
+*.zip
+*.tar.gz
+*.png
+*.jpg
+*.jpeg
+
+# Application Runtime Data / Temp
+temp_*
+output_*
+cost_history.json
+debug_*.log
+
+# Streamlit specific
+.streamlit/secrets.toml
