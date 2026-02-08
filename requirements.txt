@@ -1,4 +1,4 @@
-streamlit==1.40.0
+streamlit==1.39.0
 dashscope>=1.14.0
 openai-whisper
 opencv-python-headless
